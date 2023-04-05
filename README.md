@@ -1,6 +1,6 @@
 # MySQL Connector
 
-´´´
+```ruby
         DatabaseInfo info = new DatabaseInfo("localhost", 3306, "website", "username", "secret");
         DatabaseManager manager = new DatabaseManager(info);
         manager.createTable("groups").addString("uuid").addString("name").addString("permissions").create();
@@ -9,4 +9,4 @@
         String name = groups.get("name", uuid.toString()).get().asString();
         System.out.println(name);
         manager.shutdown();
-´´´
+```
